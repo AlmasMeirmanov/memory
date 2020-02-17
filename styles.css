@@ -1,0 +1,153 @@
+body {
+  background-image: url("assets/OuSizUw.jpg");
+  background-repeat: no-repeat;
+}
+#memory {
+  width: 1400px;
+  margin: auto;
+  display: flex;
+}
+#row1 {
+  display: flex;
+}
+#row2 {
+  display: flex;
+}
+#row3 {
+  display: flex;
+}
+
+#card1 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/new size.png");
+}
+#card2 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/new size.png");
+}
+#card3 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (1).png");
+}
+#card4 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (1).png");
+}
+#card5 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (2).png");
+}
+#card6 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (2).png");
+}
+#card7 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (3).png");
+}
+#card8 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (3).png");
+}
+#card9 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (4).png");
+}
+#card10 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (4).png");
+}
+#card11 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (5).png");
+}
+#card12 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (5).png");
+}
+#card13 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (6).png");
+}
+#card14 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (6).png");
+}
+#card15 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (7).png");
+}
+#card16 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage (7).png");
+}
+#card17 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage.png");
+}
+#card18 {
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  background-image: url("assets/Webp.net-resizeimage.png");
+}
+.front {
+  background-image: url("assets/Webp.net-resizeimage (1).png");
+}
+
+#memory {
+  display: flex;
+  flex-wrap: wrap;
+}
