@@ -1,44 +1,5 @@
-// $("#card1").flip()
-// $("#card2").flip()
-// $("#card3").flip()
-// $("#card4").flip()
-// $("#card5").flip()
-// $("#card6").flip()
-// $("#card7").flip()
-// $("#card8").flip()
-// $("#card9").flip()
-// $("#card10").flip()
-// $("#card11").flip()
-// $("#card12").flip()
-// $("#card13").flip()
-// $("#card14").flip()
-// $("#card15").flip()
-// $("#card16").flip()
-// $("#card17").flip()
-// $("#card18").flip()
 // var cards = document.querySelectorAll(".card")
 var cards = $(".card").toArray()
-//console.log(cards)
-// var cards = [
-//   "#card1",
-//   "#card2",
-//   "#card3",
-//   "#card4",
-//   "#card5",
-//   "#card6",
-//   "#card7",
-//   "#card8",
-//   "#card9",
-//   "#card10",
-//   "#card11",
-//   "#card12",
-//   "#card13",
-//   "#card14",
-//   "#card15",
-//   "#card16",
-//   "#card17",
-//   "#card18"
-// ]
 
 function shuffle(array) {
   var currentIndex = array.length,
@@ -70,27 +31,79 @@ $("#memory")
   .flip()
 const state = {
   card1: "",
-  card2: ""
+  card2: "",
+  lives: 5,
+  matched: []
 }
-
+$(".lives").html(state.lives)
+//var flipped = 2
 $("#memory").on("click", ".card", function(e) {
   var value = $(this).data("value")
-  console.log(value)
+  $(this).addClass("flipped")
 
   if (state.card1 === "") {
-    state.card1 = $(this).data("value")
-  } else if (state.card1 != "") {
-    state.card2 = $(this).data("value")
+    state.card1 = value
+  } else if (state.card1 !== "") {
+    state.card2 = value
     console.log(state.card1, state.card2)
-  } else
-    state.card1 != state.card2,
-      setTimeout(() => {
-        state.card1.flip(false)
-        state.card2.flip(false)
-      }, 1000)
-  if (state.card1 === state.card2) {
-    alert("match")
   }
+
+  setTimeout(() => {
+    if (
+      state.card1 === state.card2 &&
+      state.card1 !== "" &&
+      state.card2 !== ""
+    ) {
+      $(this)
+        .removeClass("flipped")
+        .addClass("match")
+      $(this)
+        .siblings()
+        .find("+ .flipped")
+        .removeClass("flipped")
+        .addClass("match")
+      state.matched.push(this)
+      state.card1 = ""
+      state.card2 = ""
+    } else if (
+      state.card1 !== state.card2 &&
+      state.card1 !== "" &&
+      state.card2 !== ""
+    ) {
+      $(".match").off(".flip")
+      setTimeout(() => {
+        $(".flipped").flip(false)
+      }, 500)
+      setTimeout(() => {
+        $(this).removeClass("flipped")
+        $(this)
+          .siblings()
+          .removeClass("flipped")
+      }, 600)
+      state.card1 = ""
+      state.card2 = ""
+      state.lives--
+      $(".lives").html(state.lives)
+      console.log(state.lives)
+    }
+    console.log(state.matched, state.lives)
+    if (state.matched.length == 9 && state.lives >= 0) {
+      window.location.href = "Winner.html"
+    } else if (state.matched.length < 9 && state.lives == 0) {
+      window.location.href = "loser.html"
+    }
+  }, 100)
+
+  //else if (state.card1 != state.card2) {
+
+  // }
+  //else if (state.card1 != state.card2) {
+  //alert("try again")
+  // setTimeout(() => {
+  //  state.card1.flip(false)
+  //  state.card2.flip(false)
+  //  }, 1000)
+  // }
 
   // }
   //console.log()

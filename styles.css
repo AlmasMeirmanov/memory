@@ -1,11 +1,23 @@
 body {
-  background-image: url("assets/OuSizUw.jpg");
-  background-repeat: no-repeat;
+  background-color: black;
 }
+.header {
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  font-family: fantasy;
+}
+.lives {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
 #memory {
-  width: 1400px;
+  width: 1272px;
   margin: auto;
   display: flex;
+  border: 1px dotted white;
 }
 #row1 {
   display: flex;
@@ -36,14 +48,14 @@ body {
   height: 250px;
   border: 1px solid black;
   margin: 5px;
-  background-image: url("assets/Webp.net-resizeimage (1).png");
+  background-image: url("assets/chew.png");
 }
 #card4 {
   width: 200px;
   height: 250px;
   border: 1px solid black;
   margin: 5px;
-  background-image: url("assets/Webp.net-resizeimage (1).png");
+  background-image: url("assets/chew.png");
 }
 #card5 {
   width: 200px;
@@ -134,20 +146,55 @@ body {
   height: 250px;
   border: 1px solid black;
   margin: 5px;
-  background-image: url("assets/Webp.net-resizeimage.png");
+  background-image: url("assets/yoda.png");
 }
 #card18 {
   width: 200px;
   height: 250px;
   border: 1px solid black;
   margin: 5px;
-  background-image: url("assets/Webp.net-resizeimage.png");
-}
-.front {
-  background-image: url("assets/Webp.net-resizeimage (1).png");
+  background-image: url("assets/yoda.png");
 }
 
 #memory {
   display: flex;
   flex-wrap: wrap;
+}
+#winner {
+  background-image: url("assets/OuSizUw.jpg");
+  background-repeat: no-repeat;
+}
+#winner header {
+  font-family: fantasy;
+  text-align: center;
+  font-size: 100px;
+  color: gold;
+  margin-top: 175px;
+}
+#newgame {
+  border: 1px solid white;
+  color: red;
+  background-color: black;
+  margin-left: 700px;
+  font-size: 35px;
+  margin-top: 650px;
+}
+#loser {
+  background-image: url("assets/red-and-orange-solar-flare-73873.jpg");
+  background-repeat: no-repeat;
+}
+#loser header {
+  font-family: fantasy;
+  text-align: center;
+  font-size: 100px;
+  color: black;
+  margin-top: 175px;
+}
+#new-game {
+  border: 1px solid white;
+  color: red;
+  background-color: black;
+  margin-left: 700px;
+  font-size: 35px;
+  margin-top: 500px;
 }
