@@ -32,7 +32,7 @@ $("#memory")
 const state = {
   card1: "",
   card2: "",
-  lives: 5,
+  lives: 10,
   matched: []
 }
 $(".lives").html(state.lives)
@@ -93,45 +93,4 @@ $("#memory").on("click", ".card", function(e) {
       window.location.href = "loser.html"
     }
   }, 100)
-
-  //else if (state.card1 != state.card2) {
-
-  // }
-  //else if (state.card1 != state.card2) {
-  //alert("try again")
-  // setTimeout(() => {
-  //  state.card1.flip(false)
-  //  state.card2.flip(false)
-  //  }, 1000)
-  // }
-
-  // }
-  //console.log()
-  // else state.card1 === state.card2
-  // console.log()
-  //this.disabled = true
-  //console.log("goodjob")
-
-  //console.log()
-
-  //this.disabled = true
-  //var value = $(this).attr("class")
-  //if (value === "") {
-  //  state.card1 += value
-  //} else if (state.card1 != "") {
-  //  state.card2 += value
-  //}
-  //if (state.card1 === state.card2) {
-  //this.disabled = true
-  //} else if (state.card1 != state.card2) {
-  //  setTimeout(() => {
-  //   state.card1.flip(false)
-  // state.card2.flip(false)
-  //  }, 1000)
-  // console.log()
-  //}
-
-  //if (card1.find(".back1").html() === card2.find("#card2").html())
-  //this.matched = true
-  //console.log()
 })
